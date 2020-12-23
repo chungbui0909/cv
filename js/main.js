@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    
+
     var offset_about = $(".left").offset().top
     var offset_exp = $(".exp").offset().top
     var offset_skill = $(".skill").offset().top
@@ -73,6 +75,7 @@ $(document).ready(function () {
         $(this).parent().parent().find(".icon-plus").removeClass("none-plus")
         
     });
-    // right-$(selector).clone(true);
+    
+              
 
 });
