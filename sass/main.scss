@@ -146,6 +146,15 @@ body {
             color: gray;
         }
     } 
+    
+    @media screen and (max-width: 1200px) {
+        .avatar{
+            .name,.intro{
+                margin: 0;
+            }
+        }
+        
+    }
     @media screen and (max-width: 700px) {
         display: none;
         
@@ -169,14 +178,6 @@ body {
             
             
         } 
-    }
-    @media screen and (max-width: 1200px) {
-        .avatar{
-            .name,.intro{
-                margin: 0;
-            }
-        }
-        
     }
 }
 // end header
@@ -212,9 +213,7 @@ body {
             }
         }
     }
-    @media screen and (max-width: 700px) {
-        display: none;
-    }
+    
     @media screen and (max-width: 992px) {
         // display: none;
         ul{
@@ -222,6 +221,9 @@ body {
                 padding: 15px;
             }
         }
+    }
+    @media screen and (max-width: 700px) {
+        display: none;
     }
 }
 .sticker-menu{
@@ -483,24 +485,9 @@ body {
         }
         
     }
-    @media screen and (max-width: 700px) {
-        font-size: 18px;
-        // width: 100%;
-        // padding: 0;
-        margin: 0 auto;
-        background-color: red;
-        // box-shadow: none;
-        h1{
-            font-size: 25px;
-            // background-color: ;
-        }
-        h2{
-            font-size: 20px;
-        }
-        .left{
-            width: 100%;
-            padding: 0;
-        }
+    
+    
+    @media screen and (max-width: 1200px) {
         .right{
             padding: 0;
             margin-top: 20px;
@@ -546,7 +533,27 @@ body {
             }
         }
     }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 700px) {
+        font-size: 18px;
+        // width: 100%;
+        // padding: 0;
+        margin: 0 auto;
+        background-color: red;
+        // box-shadow: none;
+        h1{
+            font-size: 25px;
+            // background-color: ;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .left{
+            width: 100%;
+            padding: 0;
+            .sub-avt{
+                display: block;
+            }
+        }
         .right{
             padding: 0;
             margin-top: 20px;
@@ -596,17 +603,18 @@ footer{
             transition: 1s;
         }
     }
+    
+    @media screen and (max-width: 1200px) {
+        right: 5%;
+        bottom: 10%;
+        
+    }
     @media screen and (max-width: 700px) {
         right: 5%;
         bottom: 20%;
         i{
             color: #ff9c0087;
         }
-    }
-    @media screen and (max-width: 1200px) {
-        right: 5%;
-        bottom: 10%;
-        
     }
 }
 .appear{

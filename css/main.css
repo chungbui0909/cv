@@ -353,6 +353,12 @@ body {
   color: gray;
 }
 
+@media screen and (max-width: 1200px) {
+  #header .avatar .name, #header .avatar .intro {
+    margin: 0;
+  }
+}
+
 @media screen and (max-width: 700px) {
   #header {
     display: none;
@@ -371,12 +377,6 @@ body {
   }
   #header .avatar {
     top: 75%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #header .avatar .name, #header .avatar .intro {
-    margin: 0;
   }
 }
 
@@ -409,15 +409,15 @@ body {
   color: black;
 }
 
-@media screen and (max-width: 700px) {
-  .menu-header {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .menu-header ul li {
     padding: 15px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menu-header {
+    display: none;
   }
 }
 
@@ -705,22 +705,7 @@ body {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 700px) {
-  .main-content {
-    font-size: 18px;
-    margin: 0 auto;
-    background-color: red;
-  }
-  .main-content h1 {
-    font-size: 25px;
-  }
-  .main-content h2 {
-    font-size: 20px;
-  }
-  .main-content .left {
-    width: 100%;
-    padding: 0;
-  }
+@media screen and (max-width: 1200px) {
   .main-content .right {
     padding: 0;
     margin-top: 20px;
@@ -768,7 +753,25 @@ body {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 700px) {
+  .main-content {
+    font-size: 18px;
+    margin: 0 auto;
+    background-color: red;
+  }
+  .main-content h1 {
+    font-size: 25px;
+  }
+  .main-content h2 {
+    font-size: 20px;
+  }
+  .main-content .left {
+    width: 100%;
+    padding: 0;
+  }
+  .main-content .left .sub-avt {
+    display: block;
+  }
   .main-content .right {
     padding: 0;
     margin-top: 20px;
@@ -825,6 +828,13 @@ footer {
   transition: 1s;
 }
 
+@media screen and (max-width: 1200px) {
+  .btn-back-to-top {
+    right: 5%;
+    bottom: 10%;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .btn-back-to-top {
     right: 5%;
@@ -832,13 +842,6 @@ footer {
   }
   .btn-back-to-top i {
     color: #ff9c0087;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .btn-back-to-top {
-    right: 5%;
-    bottom: 10%;
   }
 }
 
