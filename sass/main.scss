@@ -563,7 +563,15 @@ body {
             }
         }
     }
-    
+    @media screen and (max-width: 500px) {
+        .right{
+            .skill,.ide{
+                .content{
+                    font-size: 50%;
+                }
+            }
+        }
+    }
 }
 // end main-content
 footer{

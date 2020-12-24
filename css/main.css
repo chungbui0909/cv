@@ -791,6 +791,12 @@ body {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .main-content .right .skill .content, .main-content .right .ide .content {
+    font-size: 50%;
+  }
+}
+
 footer {
   text-align: center;
   background-color: #f39c12;
