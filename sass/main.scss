@@ -28,13 +28,13 @@ $colMax: map-deep-get($grid, 'columns', 'max');
 $colGap: map-deep-get($grid, 'columns', 'gap');
 // Reset body
 @font-face {
-    font-family: "Roboto-Italic";
-    src: url("../fonts/Roboto-Italic.woff");
+    font-family: "DellaRespira-Regular";
+    src: url("../fonts/DellaRespira-Regular.woff");
     }
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto-Italic';
+    font-family: 'DellaRespira-Regular';
     overflow-x: hidden;
     background-color: #ecf0f1;
 }
@@ -443,24 +443,12 @@ body {
                 line-height: 28px;
                 text-align: justify;
                 position: relative;
-               
-                .icon-up{
-                    position: absolute;
-                    text-align: center;
-                    bottom: 0;
-                    left: 50%;
-                    font-size: 30px;
-                    cursor: pointer;
-                    color: #f39c12;
-                }
             }
             
         }
         .skill,.ide{
             .content{
-                // display: flex;
-                // flex-wrap: wrap;
-                
+                perspective: 800px;
                 .txt-box{
                     width: 30%;
                     padding: 50px;
@@ -475,7 +463,9 @@ body {
                     &:hover{
                         background-color: #f39c12;
                         color: #fff;
-                        transition: ease-in-out 0.5s;
+                        transform-origin: 50% 50%;
+                        transform: rotateY(360deg);
+                        transition: ease-in-out 1.25s;
                     }
                 }
                 &:nth-child(3n){

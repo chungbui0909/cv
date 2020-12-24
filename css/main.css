@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Roboto-Italic";
-  src: url("../fonts/Roboto-Italic.woff");
+  font-family: "DellaRespira-Regular";
+  src: url("../fonts/DellaRespira-Regular.woff");
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto-Italic';
+  font-family: 'DellaRespira-Regular';
   overflow-x: hidden;
   background-color: #ecf0f1;
 }
@@ -670,14 +670,9 @@ body {
   position: relative;
 }
 
-.main-content .right .exp .content .icon-up, .main-content .right .skill .content .icon-up, .main-content .right .ide .content .icon-up, .main-content .right .goal .content .icon-up, .main-content .right .tech .content .icon-up {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  left: 50%;
-  font-size: 30px;
-  cursor: pointer;
-  color: #f39c12;
+.main-content .right .skill .content, .main-content .right .ide .content {
+  -webkit-perspective: 800px;
+          perspective: 800px;
 }
 
 .main-content .right .skill .content .txt-box, .main-content .right .ide .content .txt-box {
@@ -697,8 +692,12 @@ body {
 .main-content .right .skill .content .txt-box:hover, .main-content .right .ide .content .txt-box:hover {
   background-color: #f39c12;
   color: #fff;
-  -webkit-transition: ease-in-out 0.5s;
-  transition: ease-in-out 0.5s;
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: ease-in-out 1.25s;
+  transition: ease-in-out 1.25s;
 }
 
 .main-content .right .skill .content:nth-child(3n), .main-content .right .ide .content:nth-child(3n) {
