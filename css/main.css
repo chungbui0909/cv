@@ -322,8 +322,9 @@ body {
   position: absolute;
   top: 95%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -397,8 +398,9 @@ body {
   font-size: 20px;
   text-transform: uppercase;
   font-weight: bold;
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .menu-header ul li:hover a {
@@ -469,15 +471,18 @@ body {
 
 .main-content h1 .icon-plus:hover, .main-content h2 .icon-plus:hover {
   color: #fff;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
+  -ms-transition: 0.5s;
+  -webkit-transition: 0.5s;
 }
 
 .main-content h1 .icon-plus:hover i, .main-content h2 .icon-plus:hover i {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .main-content h1 .none-plus, .main-content h2 .none-plus {
@@ -513,8 +518,9 @@ body {
 }
 
 .main-content .left .profile, .main-content .left .contact, .main-content .left .education, .main-content .left .language, .main-content .left .hobbies {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .main-content .left .profile .txt-box, .main-content .left .contact .txt-box, .main-content .left .education .txt-box, .main-content .left .language .txt-box, .main-content .left .hobbies .txt-box {
@@ -540,31 +546,36 @@ body {
 }
 
 .main-content .left .profile .txt-box p:hover i, .main-content .left .contact .txt-box p:hover i, .main-content .left .education .txt-box p:hover i, .main-content .left .language .txt-box p:hover i, .main-content .left .hobbies .txt-box p:hover i {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .main-content .left .profile .txt-box-move-in, .main-content .left .contact .txt-box-move-in, .main-content .left .education .txt-box-move-in, .main-content .left .language .txt-box-move-in, .main-content .left .hobbies .txt-box-move-in {
   opacity: 0;
   visibility: hidden;
   display: block;
+  animation: leftContent 1s forwards;
+  -ms-animation: leftContent 1s forwards;
   -webkit-animation: leftContent 1s forwards;
-          animation: leftContent 1s forwards;
 }
 
 @-webkit-keyframes leftContent {
   0% {
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
     opacity: 0;
     visibility: hidden;
     display: block;
   }
   100% {
+    transform: translateX(0%);
+    -ms-transform: translateX(0%);
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     display: block;
@@ -573,15 +584,17 @@ body {
 
 @keyframes leftContent {
   0% {
+    transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
     opacity: 0;
     visibility: hidden;
     display: block;
   }
   100% {
+    transform: translateX(0%);
+    -ms-transform: translateX(0%);
     -webkit-transform: translateX(0%);
-            transform: translateX(0%);
     opacity: 1;
     visibility: visible;
     display: block;
@@ -614,10 +627,12 @@ body {
 }
 
 .main-content .left .profile .txt-box .name:hover i, .main-content .left .profile .txt-box .sex:hover i, .main-content .left .profile .txt-box .birth-day:hover i, .main-content .left .profile .txt-box .intro:hover i {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .main-content .left .contact .txt-box i {
@@ -646,10 +661,12 @@ body {
 }
 
 .main-content .left .contact .txt-box .birth-day:hover i, .main-content .left .contact .txt-box .home:hover i, .main-content .left .contact .txt-box .phone:hover i, .main-content .left .contact .txt-box .address:hover i, .main-content .left .contact .txt-box .fb:hover i, .main-content .left .contact .txt-box .gmail:hover i {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transition-duration: 1s;
+  -ms-transition-duration: 1s;
   -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 
 .main-content .right {
@@ -657,8 +674,9 @@ body {
 }
 
 .main-content .right .exp, .main-content .right .skill, .main-content .right .ide, .main-content .right .goal, .main-content .right .tech {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -ms-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   margin-bottom: 20px;
 }
 
@@ -692,12 +710,15 @@ body {
 .main-content .right .skill .content .txt-box:hover, .main-content .right .ide .content .txt-box:hover {
   background-color: #f39c12;
   color: #fff;
+  transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
   -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+  transform: rotateY(360deg);
+  -ms-transform: rotateY(360deg);
   -webkit-transform: rotateY(360deg);
-          transform: rotateY(360deg);
-  -webkit-transition: ease-in-out 1.25s;
   transition: ease-in-out 1.25s;
+  -ms-transition: ease-in-out 1.25s;
+  -webkit-transition: ease-in-out 1.25s;
 }
 
 .main-content .right .skill .content:nth-child(3n), .main-content .right .ide .content:nth-child(3n) {
@@ -827,10 +848,12 @@ footer {
 }
 
 .btn-back-to-top i:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  -webkit-transition: 1s;
   transition: 1s;
+  -ms-transition: 1s;
+  -webkit-transition: 1s;
 }
 
 @media screen and (max-width: 1200px) {
